@@ -1,7 +1,9 @@
 package q8_move_zero
 
 // moveZero 移动零
-// 1,0,2,3
+// given an array of numbers, there may be multiple zero in it.
+// try to write an algorithm move all zeros to the end of given array
+// 1,0,2,3  ==> 1,2,3,0
 func moveZero(nums []int) []int {
 	var n, z int
 	// 先从前向后找到 0 的数字
