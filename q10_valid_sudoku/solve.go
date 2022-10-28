@@ -3,6 +3,7 @@ package q10_valid_sudoku
 import "fmt"
 
 // validSudokuVersion2...
+// speed
 func validSudokuVersion2(sudoku [][]byte) bool {
 	var numberRow = make(map[int]map[byte]int)
 	var numberCol = make(map[int]map[byte]int)
