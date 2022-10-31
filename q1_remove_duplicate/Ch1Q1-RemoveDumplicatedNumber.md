@@ -10,7 +10,7 @@
 - Input array is sorted, it's means the duplicated numbers will stay together one by one.
 
     `[1,2,2,3,4]`  OR `[3,2,2,1]`
-- If number[i] eq number[i+1], we should remove one of them.
+- If number[i] equal number[i+1], we should remove one of them.
 - Their will be three kinds of input we should handle carefully. 
   1. Duplicated numbers placed at beginning of array
      `[1,1,1,2,3,4,5]`
@@ -18,4 +18,4 @@
      `[1,2,3,3,3,4,5]`
   3. Duplicated numbers placed at the end of array 
      `[1,2,3,4,4,4,4]`
-
+- If number `n` equal to number `n+1`, 
