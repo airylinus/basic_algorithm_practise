@@ -1,8 +1,9 @@
 package ch3_q1_remove_linknode
 
 import (
-	"github.com/airylinus/basic_algorithm_practise/common"
 	"testing"
+
+	"github.com/airylinus/basic_algorithm_practise/common"
 )
 
 func Test_removeLinkNode(t *testing.T) {
@@ -43,6 +44,24 @@ func Test_removeLinkNode(t *testing.T) {
 			},
 			wantNewHead: nil,
 			wantResult:  "1 -> 3 -> 5 -> 6 -> 7",
+		},
+		{
+			name: "test-4",
+			args: args{
+				head:      common.MakeLinkNode([]int{2, 3, 5, 6, 7}),
+				targetVal: 2,
+			},
+			wantNewHead: nil,
+			wantResult:  "3 -> 5 -> 6 -> 7",
+		},
+		{
+			name: "test-4",
+			args: args{
+				head:      common.MakeLinkNode([]int{2, 3, 5, 6, 7}),
+				targetVal: 6,
+			},
+			wantNewHead: nil,
+			wantResult:  "2 -> 3 -> 5 -> 7",
 		},
 	}
 	for _, tt := range tests {
